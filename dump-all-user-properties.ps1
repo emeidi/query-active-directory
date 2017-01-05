@@ -35,7 +35,7 @@ foreach($username in $usernames) {
         }
     }
 
-    $filename = "$username.txt"
+    $filename = "user-$username.txt"
     "$out" | Out-File -FilePath $filename
 
     if($debug -eq $true) {
